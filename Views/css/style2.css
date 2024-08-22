@@ -1,0 +1,333 @@
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Color de fondo */
+    font-family: 'Montserrat', sans-serif; /* Tipografía principal */
+}
+/* Estilos para la cabecera */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D4EBCE;;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); /* Sombra en la cabecera */
+}
+
+.logo img{
+    padding-left: 15px;
+    width: 100px; /* Ancho de la imagen del logo */
+    height: 100px; /* Ancho de la imagen del logo */
+}
+/* Botones en la cabecera */
+.header-btn_help{
+    background-color: #9191bd;  /* Color de fondo del botón de ayuda */
+    margin: 20px;
+    padding: 20px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff; /* Color del texto del botón */
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #6a6ab4;
+    transition: 0.5s;
+    transition-property: background-color, font-size;
+    transition-property: all;
+}
+.header-btn_help:hover{
+    background-color: #6a6ab4; /* Color de fondo al pasar el mouse */
+}
+/* Estilos responsivos */
+.header-btn_logout {
+    background-color: #8e8c8c;
+    margin: 20px;
+    padding: 20px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #8e8c8c;
+    transition: 0.5s;
+    transition-property: background-color, font-size;
+    transition-property: all;
+}
+
+.header-btn_logout:hover{
+    background-color: #636363;
+   
+}
+/* Estilos responsivos */
+@media (max-width: 575px) {
+    .header-btn_help{
+        font-size: 10px;
+        margin: 0;
+        
+    }
+    .header-btn_logout {
+        font-size: 10px;
+        margin: 0;
+        
+    }
+}
+
+@media (max-width: 400px) {
+    .header-btn_help{
+        font-size: 5px;
+        margin: 0;
+        
+    }
+    .header-btn_logout {
+        font-size: 5px;
+        margin: 0;
+        
+    }
+}
+/* Texto de bienvenida */
+.bienvenida span{
+    background-color: #9191bd;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #9191bd; ;
+   
+}
+/* Encabezados */
+h1 {
+    margin: 0;
+    text-align: center; 
+    color: #333;
+    font-size: 44px;
+}
+/* Secciones del contenido principal */
+main {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    overflow: hidden; 
+}
+/* Secciones del contenido principal */
+.seccion-izquierda,
+.seccion-derecha {
+    flex: 1; /* Ajusta el tamaño de las secciones */
+    padding: 20px;
+    margin: 0; /* Eliminar márgenes si es necesario */
+    box-sizing: border-box; /* Incluir márgenes y bordes en el ancho y alto */
+    display: flex; /* Convertir las secciones en contenedores flex */
+    flex-direction: column; /* Alinear el contenido en columna */
+    align-items: center; /* Centrar el contenido horizontalmente */
+    text-align: center; /* Centrar el contenido verticalmente */
+    
+}
+.seccion-izquierda span {
+    font-size: 50px;
+}
+/* Estilos de los botones */
+.btn-1{
+    margin-top: 15px;
+}
+
+.btn-1 a{
+    border-radius: 40px;
+    border: 1px solid #6a6ab4;
+    box-shadow: 0 0 15px 0 #6a6ab4;
+    transition-duration: 1s;
+    transition-property: border, box-shadow;
+}
+
+.btn-1 a:hover{
+    background-color: #6a6ab4;
+    box-shadow: 0 0 32px 0 #5656b7;
+}
+
+/* Estilos responsivos para pantallas pequeñas (celulares) */
+@media (max-width: 890px) {
+    main {
+        flex-direction: column; /* Las secciones se apilan una sobre otra */
+    }
+
+    .seccion-izquierda,
+    .seccion-derecha {
+        width: 100%; /* Cada sección ocupa todo el ancho */
+        overflow-x: auto; /* Habilitar scroll horizontal si es necesario */
+        
+    }
+}
+
+/* Estilos para botones generales */
+.boton {
+    display: inline-block;
+    background-color: #9191bd;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; 
+    align-items: center;
+    font-size: 25px;
+}
+
+.boton2 {
+    display: inline-block;
+    background-color: #9191bd;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; 
+    align-items: center;
+   
+}
+  
+  
+span {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.ambiente {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 40px; 
+}
+
+.seccion-derecha h2{
+    font-size: 30px;
+    margin: 5px;
+}
+
+.box-ambiente{
+    border: 1px solid #a4a4c2;
+    border-radius: 40px;
+    box-shadow: 0 0 5px 0 #a4a4c2;
+}
+
+.on-off{
+    font-size: 12px;
+    display: flex;
+    justify-content:space-around;
+    border-bottom: 1px solid #a4a4c2;
+}
+.on {
+    background-color: #D4EBCE;
+    font-size: 20px;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #b0d7ac;
+    box-shadow: 0 0 10px 0 #929c90;
+    transition: 1s;
+    transition-property: background-color;
+}
+.on:hover{
+    background-color: #c5ebbc;
+}
+
+.off{
+    background-color: #a4a4c2;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #9c9cba;
+    box-shadow: 0 0 10px 0 #a1a1ce;
+    transition: 1s;
+    transition-property: background-color;
+}
+.off:hover{
+    background-color: #a1a1ce;
+
+}
+/* Estilos para diferentes estados de ocupación */
+.ocupado {
+    background-color: #9191bd;
+    color: white;
+    border-radius: 40px; 
+    padding: 15px;
+    box-shadow: 0 0 5px 0 #9191bd;
+    transition-duration: 0.7s;
+    transition-property: background-color;
+}
+.ocupado:hover{
+    background-color: #6a6ab4;
+    border-radius: 40px;
+}
+.libre {
+    background-color: #D4EBCE;
+    color: rgb(4, 4, 4);
+    border-radius: 40px; 
+    padding: 15px;
+    box-shadow: 0 0 5px 0 #a3bba1;
+    transition-duration: 0.7s;
+    transition-property: background-color;
+}
+.libre:hover{
+    background-color: #b0d7ac;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+/* Contenedor del pie de página */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+/* Contenido del pie de página */
+.footer-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Logo en el pie de página */
+.footer-logo img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+/* Enlaces del pie de página */
+.footer-links, .footer-social {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.footer-links a, .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
